@@ -1,0 +1,78 @@
+body {
+  background-color: #f0f8f5; /* Verde claro */
+  color: #2c3e50; /* Cinza escuro */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff; /* Fundo branco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #1abc9c; /* Verde vibrante para o título principal */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #16a085; /* Bordas em verde escuro */
+  border-radius: 5px;
+  background-color: #e8f6f3; /* Fundo suave em tom de verde claro */
+}
+
+h2 {
+  color: #16a085; /* Verde escuro vibrante para os dias da semana */
+  margin-bottom: 10px;
+}
+
+.periodo-container {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #16a085; /* Bordas em verde escuro */
+  border-radius: 5px;
+  background-color: #d1f2eb; /* Fundo suave em tom de verde */
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  color: #27ae60; /* Verde escuro para os rótulos */
+}
+
+input[type="text"],
+select {
+  width: calc(100% - 110px);
+  padding: 8px;
+  border: 1px solid #27ae60; /* Bordas do campo de texto em verde escuro */
+  border-radius: 5px;
+  background-color: #eafaf1; /* Fundo suave no campo de entrada */
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #2ecc71; /* Realce da borda ao focar */
+  outline: none;
+}
+
+button {
+  background-color: #16a085; /* Verde */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1abc9c; /* Verde claro */
+}
