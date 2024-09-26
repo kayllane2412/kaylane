@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
@@ -17,6 +17,12 @@ function App() {
   const [atividade, setAtividade] = useState('');
   const [diaSelecionado, setDiaSelecionado] = useState('Segunda-feira');
   const [periodoSelecionado, setPeriodoSelecionado] = useState('manha');
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Aplicar o tema com base no estado
+    document.body.className = isDarkMode ? 'dark-mode' : 'light-mode';
+  }, [isDarkMode]);
 
   const adicionarAtividade = () => {
     if (!atividade) return;
@@ -33,9 +39,16 @@ function App() {
     setAtividade('');
   };
 
+  const alternarTema = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
     <div className="app-container">
       <h1>Gerenciador de Estudos 2024</h1>
+      <button onClick={alternarTema}>
+        {isDarkMode ? 'Modo Claro' : 'Modo Escuro'}
+      </button>
 
       <div className="input-container">
         <label>Dia:</label>
